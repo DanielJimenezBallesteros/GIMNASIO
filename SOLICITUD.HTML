@@ -16,19 +16,19 @@
     <body class="inscripcion">
         <div class= "contenido">
             <header class="texto-centrado">
-               <h1 id="title">HOJA DE INSCRIPCIÓN</h1>
-               <p id="description">
+               <h1 class="h1-inscripcion" id="title">HOJA DE INSCRIPCIÓN</h1>
+               <p class="parrafo-justificante">
                    <em>*Recuerde adjuntar el justificante del pago al final del formulario</em>
                </p>
             </header>
 
        <!-- Comienzo del formulario. Dentro de la etiqueta <form>. 
          Atributo action determina donde se envían los datos recopilados, una vez que se pulse al boton submit -->   
-    <form action="#" id="solicitud" class="form-label">
+    <form class="formulario" action="#" class="fomulario" id="solicitud" class="form-label">
         <div class="form-grupo">
 
         <!-- <label> etiqueta estatica asociada con un elemento de campo que se identifica mediante el atributo for-->
-            <label for="name" id="nombre-etiqueta">Nombre y apellidos</label>
+            <label class="etiquetas-form" for="name" id="nombre-etiqueta">Nombre y apellidos</label>
 
          <!--Input: elemento de campo de formulario. ATRIBUTOS:
             Type: text (caja de texto), number (admite numeros, si especifica valores min-max.Se muestra con un slider),email (solo admite una direccion de correo correcta)
@@ -49,7 +49,7 @@
         </div>
         
         <div class="form-grupo">
-            <label for="email" id="email-etiqueta">Correo electrónico</label> 
+            <label class="etiquetas-form" for="email" id="email-etiqueta">Correo electrónico</label> 
               <input
                 type="email"
                 id="email"
@@ -59,7 +59,7 @@
               />
         </div>
         <div class="form-grupo">
-            <label for="password" id="pass-etiqueta">Contraseña: deberá contener 6 o más carácteres.</label> 
+            <label class="etiquetas-form" for="password" id="pass-etiqueta">Contraseña: deberá contener 6 o más carácteres.</label> 
               <input
                 type="password"
                 id="pass"
@@ -70,26 +70,27 @@
               />
         </div>
         <div class="form-grupo">
-            <label for="tele.</label> fono" id="tel-etiqueta">Teléfono de contacto
+            <label class="etiquetas-form" for="telefono" id="tel-etiqueta">Teléfono de contacto </label>
               <input
                 type="tel"
                 id="telefono"
                 class="form-control"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
                 placeholder="Formato: 123-456-7890"
                 required
               />
+            
         </div>
 
         <div class="form-grupo">
-            <label for="number" id="number-etiqueta">Edad (opcional)</label>
+            <label class="etiquetas-form" for="number" id="number-etiqueta">Edad (opcional)</label>
                <input type="number" name="edad" id="number" min="16" max="90" placeholder="Introduce tu edad" class="form-control"/>   
         </div>
 
       <!--<SELECT> (etiqueta representa lista desplegable) definidas por medio de etiquetas <OPTION>. Cada option con su VALUE (el valor irá a la BBDD) SELECTED (opción preseleccionada) DISABLED (control deshabilitado, en color gris, el usuario no puede interactuar con él)-->  
      <div class="form-grupo">
         <label for="desplegable">
-             <p>¿A que clase te quieres apuntar? </p>  
+             <p class="parrafo-main">¿A que clase te quieres apuntar? </p>  
         </label>
         <select name="desplegable" id="despegable" class="form-control" required>
             <option selected disabled>Escoja una clase </option>
@@ -103,21 +104,21 @@
         
     <!--Imput type: radio "boton de radio".Los botones tienen el mismo NAME = al mismo grupo, pero el usuario solo podrá seleccionar un boton: EXCLUYENTE. CHECKED (atributo marcado, casilla verificacion preseleccionada)-->
        <div class="form-grupo">
-            <p main="parrafo-main">¿Quiere probar nuestra rutina de entrenamiento y nutrición?</p>
-            <p>
-                <label>
+            <p class="parrafo-main">¿Quieres probar nuestra rutina de entrenamiento y nutrición?</p>
+            <p class="parrafos-rc">
+                <label class="radio-check">
                      <input type="radio" name="responde" id="si"  value="si" checked>
                      Si, me interesa.
                 </label>
             </p>
-             <p>
-                <label>
+            <p class="parrafos-rc">
+                <label class="radio-check">
                     <input type="radio" name="responde" id="No" value="no">
                     No, gracias.
                 </label>
             </p>
-            <p>
-                <label>
+            <p class="parrafos-rc">
+                <label class="radio-check">
                     <input type="radio" name="responde" id="despues" value="despues">
                     Pregunte más tarde.
                 </label>
@@ -127,32 +128,32 @@
     <!--Imput type: Checkbox, "casilla de verificacion", usuario podrá marcar y desmarcar. MULTIPLES OPCIONES-->     
     <div class="form-grupo">
         <p class="parrafo-main"> ¿Que clases quieres que incluyamos proximamente?</p>  
-             <p>
-                <label>
+             <p class="parrafos-rc">
+                <label class="radio-check">
                     <input type="checkbox" name="checkbox" value="mantenimiento">
                     Mantenimiento
                 </label>
             </p>
-            <p>
-                <label>
+            <p class="parrafos-rc">
+                <label class="radio-check">
                     <input type="checkbox" name="checkbox" value="hit">
                     Hiit y Cross Training
                 </label>
             </p>
-            <p>
-                <label>
+            <p class="parrafos-rc">
+                <label class="radio-check">
                     <input type="checkbox" name="checkbox" value="boxeo">
                     Boxeo
                 </label>
             </p>
-            <p>
-                <label>
+            <p class="parrafos-rc">
+                <label class="radio-check">
                     <input type="checkbox" name="checkbox" value="boxeo">
                     GAP
                 </label>
             </p>
-            <p>
-                <label>
+            <p class="parrafos-rc">
+                <label class="radio-check">
                     <input type="checkbox" name="checkbox" value="boxeo">
                     Hipopresivos y abdominales
                 </label>
@@ -163,7 +164,7 @@
      Name (recuperar comentarios/observaciones del lado del servidor), Cols (ancho del campo), Rows(numero de filas visibles del campo)-->
         <div class="form-grupo">
               <p class="parrafo-main">Otros comentarios o sugerencias:</p>
-                 <textarea name="comentarios" id="comentarios" cols="50" rows="6" placeholder="Introduzca su comentario aqui" required></textarea>
+                 <textarea class="textarea-form"name="comentarios" id="comentarios" cols="50" rows="6" placeholder="Introduzca su comentario aqui" required></textarea>
         </div>
         
      <!--Input type submit: "boton-entregar-enviar",el usuario hace click, realiza la petición al programa servidor especificado en action-->
