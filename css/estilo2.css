@@ -43,11 +43,9 @@ select{
 .texto-centrado{
     text-align: center;
     color: black;
-    
-}
-header{
     padding: 2rem 1rem 1rem 1rem;
     font-weight: bold;
+    
 }
 
 h1{
@@ -141,10 +139,14 @@ textarea{
     border-radius: 12px;
     color:rgb(37, 34, 34);
     width: 30%;  
-    position: relative;
-    left: 520px;
     bottom: 10px;
     font-size: 20px;
+}
+.reset{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    
 }
 .reset-form:hover{
     background-color: gold;
