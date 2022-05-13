@@ -383,7 +383,6 @@ box-sizing: border-box;
     line-height: 1.6;
     background:var(--gris);
     color: #ece9e9;
-    margin: 3.12em auto;
 }
 /*Header*/
 .texto-encabezado{
