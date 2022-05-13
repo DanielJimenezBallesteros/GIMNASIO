@@ -455,6 +455,9 @@ box-sizing: border-box;
     height: 1rem;
     padding: 1.25rem; 
 }
+input[type=checkbox] {
+    display:inline;
+}
 /*Comentarios y sugerencias*/
 .textarea-form{
     font-size:1.2rem;
