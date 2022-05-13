@@ -1,46 +1,34 @@
+/* COMIENZO CSS SOLICITUD*/
+/*
 *,
 ::before,
 ::after{
 box-sizing: border-box;
 }
-
+*/
+/*Solicitud-Hoja de inscripcion*/
 .inscripcion{
     font-family: var(--font-family);
     font-weight: 400;
     line-height: 1.6;
     background:#8f8f8f;
     color: #ece9e9;
-    margin:0;
+    margin: 3.12em auto;
 }
-
-.etiquetas-form{
-    font-size:30px ;
-}
-.parrafos-rc{
-   font-size: 26px; 
-}
-.parrafo-main{
-    padding-bottom: 7px;
-    font-size: 30px;
-}
-
+/*
 button,
 textarea,
 input,
 select{
     font-family: inherit;
 }
-
-.contenido{
-    margin: 3.12em auto;
-}
+*/
 /*Header*/
-.texto-centrado{
+.texto-encabezado{
     text-align: center;
     color: black;
     padding: 2rem 1rem 1rem 1rem;
-    font-weight: bold;
-    
+    font-weight: bold;   
 }
 .h1-inscripcion{
     color: white; text-shadow: black 0.1em 0.1em 0.2em;
@@ -53,7 +41,7 @@ select{
     font-size: 2rem;
     margin: 1rem auto;
    }
-
+/*Formulario-parte principal*/
 .formulario{
     background:rgba(27,27,50,0.8);
     padding: 2.5rem 0.7rem;
@@ -61,13 +49,11 @@ select{
     width: 60%;
     margin: auto;
 }
-
 .form-grupo{
     display: flex;
     flex-direction: column;
     margin: 2rem;
 }
-
 .form-grupo p{
     line-height: 1;
     margin:0.5rem 0.1rem;
@@ -88,11 +74,22 @@ select{
     border: 1px solid white;
     margin-top: 0.4rem;
 }
-/*input radio-checkbox*/
-.radio-check{
+.etiquetas-form{
+    font-size:30px ;
+}
+.parrafos-main{
+    padding-bottom: 7px;
+    font-size: 30px;
+}
+.parrafos-rc{
+   font-size: 26px; 
+}
+
+/*Input Radio-Checkbox*/
+.radio-check label{
     width: 1 rem;
     height: 1rem;
-    padding: 1.25rem; 
+    padding: 1.25rem;
 }
 /*Comentarios y sugerencias*/
 .textarea-form{
@@ -104,7 +101,7 @@ select{
     margin: 0.5rem 0;
 }
 
-/*boton entregar*/
+/*Boton Entregar*/
 .submit-form{
     background-color: rgb(253, 176, 32);
     border:none;
@@ -119,7 +116,7 @@ select{
     overflow: hidden;
     font-size: 30px;
 }
-/*Boton limpiar formulario*/
+/*Boton Limpiar Formulario*/
 .reset-form{
     cursor:pointer;
     text-align: center;
@@ -127,27 +124,29 @@ select{
     transition: background-color .5s;
     border-radius: 12px;
     color:rgb(37, 34, 34);
-    width: 30%;  
+    width: 50%;  
     bottom: 10px;
     font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 2rem; 
 }
 .reset{
     display: flex;
     justify-content: center;
-    margin: 2rem;
-    
+    margin: 2rem; 
 }
 .reset-form:hover{
     background-color: gold;
 }
 /*Justificante transferencia-archivos */
-.ficheros{
-    font-size: 23px;
+.label-fichero{
+    font-size: 5px;
     font-weight: bold;
     text-align: right;
     position: relative;
     top: 10px;
 }
 .file-form{
-    font-size: 17px;
+    font-size: 5px;
 }

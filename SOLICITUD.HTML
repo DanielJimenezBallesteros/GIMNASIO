@@ -8,14 +8,14 @@
         content="ie=edge">
         <title>Solicitud de Alta</title>
         <link rel = "stylesheet" href="normalize.css">
-        <link rel ="stylesheet" href="css/estilo2.css">
+        <link rel ="stylesheet" href="css/ESTILOS.CSS">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="IMG/favicon.png">
     </head>
 
     <body class="inscripcion">
         <div class= "contenido">
-            <header class="texto-centrado">
+            <header class="texto-encabezado">
                <h1 class="h1-inscripcion" id="title">HOJA DE INSCRIPCIÓN</h1>
                <p class="parrafo-justificante">
                    <em>*Recuerde adjuntar el justificante del pago al final del formulario</em>
@@ -89,9 +89,7 @@
 
       <!--<SELECT> (etiqueta representa lista desplegable) definidas por medio de etiquetas <OPTION>. Cada option con su VALUE (el valor irá a la BBDD) SELECTED (opción preseleccionada) DISABLED (control deshabilitado, en color gris, el usuario no puede interactuar con él)-->  
      <div class="form-grupo">
-        <label for="desplegable">
-             <p class="parrafo-main">¿A que clase te quieres apuntar? </p>  
-        </label>
+             <p class="parrafos-main">¿A que clase te quieres apuntar? </p>  
         <select name="desplegable" id="despegable" class="form-control" required>
             <option selected disabled>Escoja una clase </option>
             <option value="pilates">Pilates</option>
@@ -104,7 +102,7 @@
         
     <!--Imput type: radio "boton de radio".Los botones tienen el mismo NAME = al mismo grupo, pero el usuario solo podrá seleccionar un boton: EXCLUYENTE. CHECKED (atributo marcado, casilla verificacion preseleccionada)-->
        <div class="form-grupo">
-            <p class="parrafo-main">¿Quieres probar nuestra rutina de entrenamiento y nutrición?</p>
+            <p class="parrafos-main">¿Quieres probar nuestra rutina de entrenamiento y nutrición?</p>
             <p class="parrafos-rc">
                 <label class="radio-check">
                      <input type="radio" name="responde" id="si"  value="si" checked>
@@ -127,7 +125,7 @@
 
     <!--Imput type: Checkbox, "casilla de verificacion", usuario podrá marcar y desmarcar. MULTIPLES OPCIONES-->     
     <div class="form-grupo">
-        <p class="parrafo-main"> ¿Que clases quieres que incluyamos proximamente?</p>  
+        <p class="parrafos-main"> ¿Que clases quieres que incluyamos proximamente?</p>  
              <p class="parrafos-rc">
                 <label class="radio-check">
                     <input type="checkbox" name="checkbox" value="mantenimiento">
@@ -163,7 +161,7 @@
      <!--Textarea: "caja de texto multilinea". 
      Name (recuperar comentarios/observaciones del lado del servidor), Cols (ancho del campo), Rows(numero de filas visibles del campo)-->
         <div class="form-grupo">
-              <p class="parrafo-main">Otros comentarios o sugerencias:</p>
+              <p class="parrafos-main">Otros comentarios o sugerencias:</p>
                  <textarea class="textarea-form"name="comentarios" id="comentarios" cols="50" rows="6" placeholder="Introduzca su comentario aqui" required></textarea>
         </div>
         

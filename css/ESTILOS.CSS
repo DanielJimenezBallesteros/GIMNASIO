@@ -370,3 +370,149 @@ label{
     padding: 2rem;
     font-size: 1.5rem;
 }
+
+/* COMIENZO CSS SOLICITUD*/
+*,
+::before,
+::after{
+box-sizing: border-box;
+}
+
+/*Solicitud-Hoja de inscripcion*/
+.inscripcion{
+    line-height: 1.6;
+    background:var(--gris);
+    color: #ece9e9;
+    margin: 3.12em auto;
+}
+/*Header*/
+.texto-encabezado{
+    text-align: center;
+    color: black;
+    padding: 2rem 1rem 1rem 1rem;
+    font-weight: bold;   
+}
+.h1-inscripcion{
+    color: white; text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 54px;
+    line-height: 1.2;
+    margin: 0;   
+}
+.parrafo-justificante{
+    font-size: 17px;
+    margin: 1rem auto;
+   }
+/*Formulario-parte principal*/
+.formulario{
+    background:rgba(27,27,50,0.8);
+    padding: 2.5rem 0.7rem;
+    border-radius: 0.4rem;
+    width: 60%;
+    margin: auto;
+    
+}
+.form-grupo{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    
+}
+.form-grupo p{
+    line-height: 1;
+    margin:0.5rem 0.1rem;
+    
+}
+.form-grupo p:not(:nth-child(1)){
+    margin:0.5rem 0;
+}
+.form-label{
+    font-size: 1.125rem;
+
+}
+.form-control{
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    height: 2.5rem;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.3rem;
+    border: 1px solid white;
+    margin-top: 0.4rem;
+}
+.etiquetas-form{
+    font-size:23px ;
+}
+.parrafos-main{
+    padding-bottom: 7px;
+    font-size: 20px;
+}
+.parrafos-rc{
+   font-size: 16px; 
+}
+
+/*Input Radio-Checkbox*/
+.radio-check{ 
+    width: 1 rem;
+    height: 1rem;
+    padding: 1.25rem; 
+}
+/*Comentarios y sugerencias*/
+.textarea-form{
+    font-size:1.2rem;
+    padding:0.375 rem 0.75rem;
+    width:100%;
+    height: auto;
+    border:none;
+    margin: 0.5rem 0;
+}
+
+/*Boton Entregar*/
+.submit-form{
+    background-color:#f68d16;;
+    border:none;
+    cursor:pointer;
+    text-align: center;
+    color:rgb(37, 34, 34);
+    padding: 0.70rem;
+    font-size:20px;
+    font-weight: bold; 
+    transition: 0.8s; 
+    position: relative;
+    overflow: hidden;
+    font-size: 25px;
+}
+/*Boton Limpiar Formulario*/
+.reset-form{
+    cursor:pointer;
+    text-align: center;
+    background-color:rgb(231, 203, 151);
+    transition: background-color .5s;
+    border-radius: 12px;
+    color:rgb(37, 34, 34);
+    width: 40%;  
+    bottom: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin: 1rem; 
+}
+.reset{
+    display: flex;
+    justify-content: center;
+    margin: 2rem; 
+}
+.reset-form:hover{
+    background-color: gold;
+}
+/*Justificante transferencia-archivos */
+.ficheros{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: right;
+    position: relative;
+    top: 7px;
+}
+.file-form{
+    font-size: 10px;
+    
+}
