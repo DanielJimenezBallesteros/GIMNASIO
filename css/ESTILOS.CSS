@@ -208,9 +208,13 @@ input[type=checkbox]:checked ~ #menu {
     color: var(--naranja);
     padding: 20px 30px;
     font-size: 2rem;
-
+    border-radius: 1rem;
 }
 
+.titular a:active{
+    transform: translate(4px) translateX(4px);
+    box-shadow: #094c66 0px 0px 0px;
+}
 /*Main*/
 .main_body{
     display:flex;
@@ -363,6 +367,7 @@ label{
 .footerBloque p {
     padding: 0rem 2rem;
     text-align: center;
+    line-height: 1.6;
 }
 
 .footerElemento {
@@ -383,7 +388,7 @@ box-sizing: border-box;
 }
 
 /*Solicitud-Hoja de inscripcion*/
-.inscripcion{
+.contenido{
     line-height: 1.6;
     background:var(--gris);
     color: #ece9e9;
@@ -443,32 +448,36 @@ box-sizing: border-box;
     margin-top: 0.4rem;
 }
 .etiquetas-form{
-    font-size:23px ;
+    color: rgb(212, 166, 79);;
+    font-size:19px ;
 }
 .parrafos-main{
+    color: rgb(212, 166, 79);
     padding-bottom: 7px;
-    font-size: 20px;
+    font-size: 17px;
 }
 .parrafos-rc{
-   font-size: 16px; 
+   font-size: 14px; 
 }
 
 /*Input Radio-Checkbox*/
 .radio-check{ 
-    width: 1 rem;
+    color:var(--blanco);
     height: 1rem;
     padding: 1.25rem; 
 }
 input[type=checkbox] {
     display:inline;
 }
+
 /*Comentarios y sugerencias*/
 .textarea-form{
     font-size:1.2rem;
     padding:0.375 rem 0.75rem;
     width:100%;
     height: auto;
-    border:none;
+    border-radius: 1rem;
+    box-shadow: 5px 8px 12px var(--negro);
     margin: 0.5rem 0;
 }
 
@@ -480,12 +489,14 @@ input[type=checkbox] {
     text-align: center;
     color:rgb(37, 34, 34);
     padding: 0.70rem;
-    font-size:20px;
+    font-size:16px;
     font-weight: bold; 
     transition: 0.8s; 
     position: relative;
     overflow: hidden;
     font-size: 25px;
+    border-radius: 1rem;
+    box-shadow: 5px 8px 12px var(--negro);
 }
 /*Boton Limpiar Formulario*/
 .reset-form{
@@ -500,18 +511,22 @@ input[type=checkbox] {
     font-size: 15px;
     display: flex;
     justify-content: center;
-    margin: 1rem; 
+    margin: 0.5rem; 
+    border-radius: 1rem;
+    box-shadow: 5px 8px 12px var(--negro);
+;
+
 }
 .reset{
     display: flex;
     justify-content: center;
-    margin: 2rem; 
 }
 .reset-form:hover{
-    background-color: gold;
+    background-color: rgba(255, 145, 0, 0.931);
 }
 /*Justificante transferencia-archivos */
 .ficheros{
+    color: var(--blanco);
     font-size: 15px;
     font-weight: bold;
     text-align: right;
@@ -519,8 +534,13 @@ input[type=checkbox] {
     top: 7px;
 }
 .file-form{
-    font-size: 10px;
-    
+    color: var(--blanco);
+    font-size: 10px; 
+    opacity: 0.6; 
+}
+.justificante{
+    color: var(--blanco);
+    font-size: 12px;
 }
 
 /*Section Areas*/
