@@ -367,6 +367,7 @@ label{
 .footerBloque p {
     padding: 0rem 2rem;
     text-align: center;
+    line-height: 1.6;
 }
 
 .footerElemento {
