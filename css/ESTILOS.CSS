@@ -673,7 +673,26 @@ input[type=checkbox] {
 }
 .contenedor-equipo dl dt{
     text-decoration: underline;
+    justify-content: center;
 }
 .contenedor-equipo li{
     list-style-type: square;
+}
+
+
+@media (max-width: 1502px) {
+    .contenedor-apartados{
+        flex-direction: column;
+    }
+    .tarjeta{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .contenedor-equipo dl {
+        box-shadow: -15px -15px 15px var(--blanco);
+    }
+   
 }
