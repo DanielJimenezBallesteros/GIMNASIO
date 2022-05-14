@@ -208,9 +208,13 @@ input[type=checkbox]:checked ~ #menu {
     color: var(--naranja);
     padding: 20px 30px;
     font-size: 2rem;
-
+    border-radius: 1rem;
 }
 
+.titular a:active{
+    transform: translate(4px) translateX(4px);
+    box-shadow: #094c66 0px 0px 0px;
+}
 /*Main*/
 .main_body{
     display:flex;
