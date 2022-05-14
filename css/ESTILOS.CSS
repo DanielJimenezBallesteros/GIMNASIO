@@ -99,6 +99,10 @@ li a {
     transition:all 0.5s ease;
 }
 
+.nav{
+    z-index:100;
+}
+
 li:hover a {
 	background: var(--naranja);
     opacity: 70%;
@@ -520,6 +524,10 @@ input[type=checkbox] {
 }
 
 /*Section Areas*/
+.section-areas{
+    background-color: var(--gris);
+    padding: 3rem;
+}
 .contenedor-tarjetas{
     overflow:hidden;
     position:relative;
@@ -528,6 +536,7 @@ input[type=checkbox] {
     justify-content: space-between;
     border-radius: 15px;
     box-shadow: 5px 8px 12px var(--negro);
+    padding: 3rem;
    
 }
 .contenedor-imagen {
@@ -564,6 +573,11 @@ input[type=checkbox] {
     .contenedor-tarjetas{
         flex-direction: column;
     }
+    .tarjeta{
+        align-items: center;
+        justify-content: center;
+
+    }
    
 }
 
@@ -572,5 +586,12 @@ input[type=checkbox] {
       opacity:0;
     
     }
+    
+    .tarjeta{
+        align-items: center;
+        justify-content: center;
+
+    }
+
    
 }
