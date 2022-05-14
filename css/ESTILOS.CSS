@@ -552,6 +552,10 @@ input[type=checkbox] {
     
 }
 
+.img{
+    width: 100%;
+}
+
 .contenedor-tarjetas .texto{
     color: var(--negro);
     position:absolute;
@@ -576,6 +580,8 @@ input[type=checkbox] {
     .tarjeta{
         align-items: center;
         justify-content: center;
+        display: flex;
+        flex-direction: column;
 
     }
    
@@ -590,6 +596,8 @@ input[type=checkbox] {
     .tarjeta{
         align-items: center;
         justify-content: center;
+        display: flex;
+        flex-direction: column;
 
     }
 
