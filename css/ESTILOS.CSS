@@ -111,6 +111,7 @@ li a {
 .nav{
     z-index:100;
     font-size: 1.5rem;
+    padding-bottom: 2px;
 }
 
 li:hover a {
@@ -575,6 +576,11 @@ input[type=checkbox] {
 
 .tarjeta img {
     width: 100%;
+}
+
+.tarjeta-titulo {
+    font-size: 3rem;
+    text-decoration: none;
 }
 
 .contenedor-tarjetas .texto{
