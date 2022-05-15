@@ -62,7 +62,7 @@ li {
     list-style: none;
 }
 
-/*Utilidades*/
+/*Utilidades comunes*/
 .sombra {
     border-radius: 1rem;
     box-shadow: 5px 8px 12px var(--negro);
@@ -238,6 +238,7 @@ input[type=checkbox]:checked ~ #menu {
 .footer_main{
     align-content: center;
     font-size: 2rem;
+    padding: 4rem 2rem 2rem 2rem;
 }
 
 
@@ -264,10 +265,9 @@ input[type=checkbox]:checked ~ #menu {
     font-size: 2rem;
 }
 
-
 .table_article{
     width:100%;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 
@@ -379,13 +379,6 @@ label{
     text-align: center;
     padding: 2rem;
     font-size: 1.5rem;
-}
-
-/* COMIENZO CSS SOLICITUD*/
-*,
-::before,
-::after{
-box-sizing: border-box;
 }
 
 /*Solicitud-Hoja de inscripcion*/
