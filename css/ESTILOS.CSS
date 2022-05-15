@@ -101,7 +101,7 @@ li a {
 
 .nav{
     z-index:100;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
 }
 
 li:hover a {
@@ -149,7 +149,7 @@ ul li a:hover + .hidden, .hidden:hover {
 }
 
 
-input[type=checkbox] {
+header input[type=checkbox] {
     display: none;
 }
 
@@ -216,11 +216,13 @@ input[type=checkbox]:checked ~ #menu {
     transform: translate(4px) translateX(4px);
     box-shadow: #094c66 0px 0px 0px;
 }
+
+
 /*Main*/
 .main_body{
-    display:flex;
-    justify-content:space-evenly;
-    background-color: var(--grisClaro);
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: var(--gris);
     lighting-color: var(--negro);
     
 }
@@ -232,8 +234,10 @@ input[type=checkbox]:checked ~ #menu {
 
 @media (max-width: 1380px) {
     .main_body{
-     flex-direction:column;
+        display: flex;
+        flex-direction:column;
     }
+
     .table_article{
         font-size:2.5rem;
         padding: 20px 20px;
@@ -245,12 +249,14 @@ input[type=checkbox]:checked ~ #menu {
 .section_main{
     align-items: center;
     text-align: center;
+    border-radius: 1rem;
+    box-shadow: 5px 8px 12px var(--negro);
+    background-color: var(--grisClaro);
+    padding: 2rem;
+    margin: 2rem;
 }
 
 .header_section{
-    border-width: 2rem;
-    border-style:ridge;
-    border-color: var(--blanco);
     font-size: 2rem;
 }
 
@@ -258,7 +264,6 @@ input[type=checkbox]:checked ~ #menu {
 .table_article{
     width:100%;
     font-size: 3rem;
-    
 }
 
 
@@ -270,11 +275,12 @@ input[type=checkbox]:checked ~ #menu {
 }
 @media (max-width: 600px) {
     .table_article{
-        font-size: 1.3rem;
+        font-size: 1rem;
         padding:0rem;
     }  
 
 }
+
 th{
     font-style: italic;
 }
@@ -290,10 +296,12 @@ th, .blanco{
 
 /*Aside*/
 .aside_main{
-  border-style:double;
-  border-width: 1rem;
-  border-color: var(--gris);
 
+  border-radius: 1rem;
+  box-shadow: 5px 8px 12px var(--negro);
+  background-color: var(--grisClaro);
+  padding: 2rem;
+  margin: 2rem;
 }
 
 .aside_main p{
@@ -313,7 +321,6 @@ label{
 
 
 /*Footer*/
-
 .rrss{
     margin-top: 20px;
     display: flex;
