@@ -348,7 +348,7 @@ label{
     background-color: var(--gris);
     display:flex;
     flex-direction: column;
-    
+    margin-top: -2px;
 }
 
 .footerBloque {
@@ -403,7 +403,7 @@ box-sizing: border-box;
 }
 .h1-inscripcion{
     color: white; text-shadow: black 0.1em 0.1em 0.2em;
-    font-size: 54px;
+    font-size: 4rem;
     line-height: 1.2;
     margin: 0;   
 }
@@ -506,8 +506,7 @@ input[type=checkbox] {
     background-color:rgb(231, 203, 151);
     transition: background-color .5s;
     border-radius: 12px;
-    color:rgb(37, 34, 34);
-    width: 40%;  
+    color:rgb(37, 34, 34); 
     bottom: 10px;
     font-size: 15px;
     display: flex;
