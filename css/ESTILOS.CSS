@@ -23,6 +23,7 @@ html {
 body{
     margin : 0;
     padding: 0;
+    background-color: var(--gris);
 }
 
 h1 {
@@ -110,7 +111,7 @@ li a {
 .nav{
     z-index:100;
     font-size: 1.5rem;
-    padding-bottom: 2px;
+    padding-bottom: 4px;
 }
 
 li:hover a {
@@ -171,6 +172,7 @@ input[type=checkbox]:checked ~ #menu {
     .header {
         display: flex;
         flex-direction: column;
+        margin-bottom: -2px;
     }
     
     .nav {
@@ -274,9 +276,9 @@ input[type=checkbox]:checked ~ #menu {
 @media (max-width: 860px) {
     .table_article{
         font-size: 2rem;
-    }
-    
+    } 
 }
+
 @media (max-width: 600px) {
     .table_article{
         font-size: 1rem;
@@ -311,6 +313,7 @@ th, .blanco{
 
 label{
     color: var(--naranja);
+    font-size: 1.5rem;
 }
 
 
@@ -331,6 +334,11 @@ label{
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.miembro {
+    flex-direction: column;
 }
 
 .icono img{
@@ -412,9 +420,9 @@ label{
 .formulario{
     background:rgba(27,27,50,0.8);
     padding: 2.5rem 0.7rem;
-    border-radius: 0.4rem;
+    border-radius: 1rem;
     width: 60%;
-    margin: auto;
+    margin: 2rem auto;
 }
 
 .form-grupo{
@@ -559,8 +567,9 @@ input[type=checkbox] {
     overflow:hidden;
     position:relative;
     display:flex;
-    background: var(--grisClaro);
-    justify-content: space-between;
+    background: var(--gris);
+    justify-content: space-around;
+    padding: 2rem;
 }
 
 .contenedor-imagen {
@@ -575,6 +584,7 @@ input[type=checkbox] {
 
 .tarjeta img {
     width: 100%;
+    border-radius: 1rem;
 }
 
 .tarjeta-titulo {
@@ -582,12 +592,16 @@ input[type=checkbox] {
     text-decoration: none;
 }
 
+.tarjeta h3 {
+    font-size: 3rem;
+}
+
 .contenedor-tarjetas .texto{
     color: var(--negro);
     position:absolute;
     top: 10%;
     left: 0%;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     text-shadow: 50px 50px 50px var(--negro);
     background-color: var(--blanco);
     padding: 0 1rem;
@@ -597,12 +611,13 @@ input[type=checkbox] {
 }
 
 .contenedor-imagen :hover{
-    transform:scale(1.1);
+    transform:scale(1);
     box-shadow: 13px 15px 37px var(--negro);
     opacity: 1;
+    border-radius: 1rem;
 }
 
-@media (max-width: 1499px) {
+@media (max-width: 1290px) {
     .contenedor-tarjetas{
         flex-direction: column;
     }
@@ -613,6 +628,7 @@ input[type=checkbox] {
         display: flex;
         flex-direction: column;
     }
+
 }
 
 @media (max-width: 472px) {
@@ -653,7 +669,6 @@ input[type=checkbox] {
     padding: 1rem;
     font-size: 2rem;
     color:var(--negro);
-    box-shadow: 15px 15px 15px var(--blanco);
 }
 
 .miembro label p{
@@ -675,9 +690,6 @@ input[type=checkbox] {
     font-size: 2rem;
 }
 
-.contenedor-equipo dl{
-    box-shadow: -15px 15px 15px var(--blanco);
-}
 
 .contenedor-equipo dl dt{
     text-decoration: underline;
@@ -696,7 +708,7 @@ input[type=checkbox] {
     font-style: oblique;
 }
 
-@media (max-width: 1502px) {
+@media (max-width: 1279px) {
     .contenedor-apartados{
         flex-direction: column;
     }
@@ -706,9 +718,5 @@ input[type=checkbox] {
         justify-content: center;
         display: flex;
         flex-direction: column;
-    }
-
-    .contenedor-equipo dl {
-        box-shadow: -15px -15px 15px var(--blanco);
     }
 }
